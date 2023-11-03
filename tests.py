@@ -14,6 +14,26 @@ class TestLogic(unittest.TestCase):
 
     # TODO: Test all functions from logic.py!
 
+    def test_get_winner(self):
+        board = [
+            ['X', 'O', 'X'],
+            ['X', 'O', 'O'],
+            ['O', 'X', 'X'],
+        ]
+        self.assertEqual(logic.get_winner(board), 'Draw')
+
+    def test.other_player(self):
+        self.assertEqual(logic.other_player('X'), 'O')
+        self.assertEqual(logic.other_player('O'), 'X')
+
+    def test_make_empty_board(self):
+        board = logic.make_empty_board()
+        self.assertEqual(board, [
+            [None, None, None],
+            [None, None, None],
+            [None, None, None]
+        ])
+
 
 if __name__ == '__main__':
     unittest.main()
