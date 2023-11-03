@@ -2,7 +2,7 @@
 # the Tic-Tac-Toe game. This is where input and output happens.
 # For core game logic, see logic.py.
 import logging
-from logic import make_empty_board, get_winner, other_player, print_board
+from logic import make_empty_board, get_winner, other_player
 
 logging.basicConfig(
     filename='logs/game.log',  # Specify the log file location
