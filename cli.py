@@ -4,6 +4,11 @@
 
 from logic import make_empty_board, get_winner, other_player, print_board
 
+def print_board(board):
+    for row in board:
+        print(" | ".join(cell if cell is not None else " " for cell in row))
+        print("-" * 9)
+
 # Reminder to check all the tests
 
 if __name__ == '__main__':
