@@ -30,8 +30,3 @@ def get_winner(board):
 def other_player(player):
     """Given the character for a player, returns the other player."""
     return 'O' if player == 'X' else 'X'
-
-def print_board(board):
-    for row in board:
-        print(" | ".join(cell if cell is not None else " " for cell in row))
-        print("-" * 9)
